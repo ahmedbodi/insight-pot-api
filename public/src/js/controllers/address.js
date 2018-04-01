@@ -8,7 +8,7 @@ angular.module('insight.address').controller('AddressController',
     var addrStr = $routeParams.addrStr;
 
     var _startSocket = function() {
-      socket.on('viacoind/addresstxid', function(data) {
+      socket.on('potcoind/addresstxid', function(data) {
         if (data.address === addrStr) {
           $rootScope.$broadcast('tx', data.txid);
           var base = document.querySelector('base');
@@ -16,11 +16,11 @@ angular.module('insight.address').controller('AddressController',
           beep.play();
         }
       });
-      socket.emit('subscribe', 'viacoind/addresstxid', [addrStr]);
+      socket.emit('subscribe', 'potcoind/addresstxid', [addrStr]);
     };
 
     var _stopSocket = function () {
-      socket.emit('unsubscribe', 'viacoind/addresstxid', [addrStr]);
+      socket.emit('unsubscribe', 'potcoind/addresstxid', [addrStr]);
     };
 
     socket.on('connect', function() {

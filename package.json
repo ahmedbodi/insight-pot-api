@@ -1,24 +1,24 @@
 {
   "name": "insight-ui",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the viacoin network and build your own services with it.",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the potcoin network and build your own services with it.",
   "version": "0.4.2",
-  "repository": "git://github.com/viacoin/insight-via-ui.git",
+  "repository": "git://github.com/potcoin-dev/insight-pot-ui.git",
   "bugs": {
-    "url": "https://github.com/bitpay/insight-ui/issues"
+    "url": "https://github.com/potcoin-dev/insight-pot-ui/issues"
   },
-  "homepage": "https://github.com/viacoin/insight-via-ui",
+  "homepage": "https://github.com/potcoin-dev/insight-pot-ui",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "viacoin",
-    "viacore",
+    "potcoin",
+    "potcore",
     "front-end"
   ],
-  "bitcoreNode": "viacore-node",
+  "bitcoreNode": "potcore-node",
   "insightConfig": {
-    "apiPrefix": "insight-via-api",
+    "apiPrefix": "insight-pot-api",
     "routePrefix": "insight"
   },
   "scripts": {

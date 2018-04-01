@@ -5,7 +5,7 @@ angular.module('insight').config(function($routeProvider) {
   $routeProvider.
     when('/block/:blockHash', {
       templateUrl: 'views/block.html',
-      title: 'Viacoin Block '
+      title: 'Potcoin Block '
     }).
     when('/block-index/:blockHeight', {
       controller: 'BlocksController',
@@ -17,7 +17,7 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/tx/:txId/:v_type?/:v_index?', {
       templateUrl: 'views/transaction.html',
-      title: 'Viacoin Transaction '
+      title: 'Potcoin Transaction '
     }).
     when('/', {
       templateUrl: 'views/index.html',
@@ -25,15 +25,15 @@ angular.module('insight').config(function($routeProvider) {
     }).
     when('/blocks', {
       templateUrl: 'views/block_list.html',
-      title: 'Viacoin Blocks solved Today'
+      title: 'Potcoin Blocks solved Today'
     }).
     when('/blocks-date/:blockDate/:startTimestamp?', {
       templateUrl: 'views/block_list.html',
-      title: 'Viacoin Blocks solved '
+      title: 'Potcoin Blocks solved '
     }).
     when('/address/:addrStr', {
       templateUrl: 'views/address.html',
-      title: 'Viacoin Address '
+      title: 'Potcoin Address '
     }).
     when('/status', {
       templateUrl: 'views/status.html',

@@ -14,7 +14,7 @@ var InsightUI = function(options) {
   this.routePrefix = pkg.insightConfig.routePrefix;
 };
 
-InsightUI.dependencies = ['insight-via-api'];
+InsightUI.dependencies = ['insight-pot-api'];
 
 inherits(InsightUI, BaseService);
 

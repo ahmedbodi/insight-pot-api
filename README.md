@@ -1,22 +1,22 @@
 Insight UI
 
-A Viacoin blockchain explorer web application service for [Viacore Node](https://github.com/viacoin/viacore-node) using the [Insight API](https://github.com/viacoin/insight-via-api).
+A Potcoin blockchain explorer web application service for [Potcore Node](https://github.com/potcoin-dev/potcore-node) using the [Insight API](https://github.com/potcoin-dev/insight-pot-api).
 
 ## Quick Start
 
-Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Viacore](https://github.com/viacoin/viacore).
+Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Potcore](https://github.com/potcoin-dev/potcore).
 
 ## Getting Started
 
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
-npm install -g viacore-node
-viacore-node create mynode
+npm install -g potcore-node
+potcore-node create mynode
 cd mynode
-viacore-node install insight-via-api
-viacore-node install insight-via-ui
-viacore-node start
+potcore-node install insight-pot-api
+potcore-node install insight-pot-ui
+potcore-node start
 ```
 
 Open a web browser to `http://localhost:3001/insight/`
@@ -41,7 +41,7 @@ By default, the `insightConfig` in `package.json` is:
 
 ```json
   "insightConfig": {
-    "apiPrefix": "insight-via-api",
+    "apiPrefix": "insight-pot-api",
     "routePrefix": "insight"
   }
 ```
@@ -88,11 +88,11 @@ compile***.
 
 ## Note
 
-For more details about the [Insight API](https://github.com/viacoin/insight-via-api) configuration and end-points, go to [Insight API GitHub repository](https://github.com/viacoin/insight-via-api).
+For more details about the [Insight API](https://github.com/potcoin-dev/insight-pot-api) configuration and end-points, go to [Insight API GitHub repository](https://github.com/potcoin-dev/insight-pot-api).
 
 ## Contribute
 
-Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/viacoin/insight-via-ui).
+Contributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/potcoin-dev/insight-pot-ui).
 
 
 ## License
@@ -116,4 +116,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
->>>>>>> upstream/master
